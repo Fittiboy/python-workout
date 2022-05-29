@@ -37,7 +37,7 @@ if __name__ == "__main__":
     print(f"1+3+5+7={mysum(1, 3, 5, 7)}")
     print(f"1+3+5+7+9+11={mysum(1, 3, 5, 7, 9, 11)}")
     print(f"1+3+5+7+9+11+13+15={mysum(1, 3, 5, 7, 9, 11, 13, 15)}")
-    print("\nBeyond the exercise:\n")
+    print("\nBeyond the exercise\n")
     print(f"7+(1+3+5)={mysum_extended([1, 3, 5], 7)}")
     print(f"The average of 1, 3, 8 is {avg([1, 3, 8])}")
     word_list = ["this", "is", "an", "incredibly", "nice", "list"]
