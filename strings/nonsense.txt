@@ -1,0 +1,15 @@
+When they hear that Python’s strings are immutable, many people wonder how the language can be used for text processing.
+After all, if you can’t modify strings, then how can you do any serious work with them?
+Moreover, there are times when a simple for loop, as we used with the Pig Latin examples, won’t work.
+If we’re modifying each word only once, then that’s fine, but if we’re potentially modifying it several times, we have to make sure that each modification won’t affect future modifications.
+This exercise is meant to help you practice thinking in this way.
+Here, you’ll implement a translator from English into another secret children’s language, Ubbi Dubbi (http://mng.bz/90zl).
+(This was popularized on the wonderful American children’s program Zoom, which was on television when I was growing up.)
+The rules of Ubbi Dubbi are even simpler than those of Pig Latin, although programming a translator is more complex and requires a bit more thinking.
+In Ubbi Dubbi, every vowel (a, e, i, o, or u) is prefaced with ub.
+Thus milk becomes mubilk (m-ub-ilk) and program becomes prubogrubam (prub-ogrub-am).
+In theory, you only put an ub before every vowel sound, rather than before each vowel.
+Given that this is a book about Python and not linguistics, I hope that you’ll forgive this slight difference in definition.
+Ubbi Dubbi is enormously fun to speak, and it’s somewhat magical if and when you can begin to understand someone else speaking it.
+Even if you don’t understand it, Ubbi Dubbi sounds extremely funny.
+See some YouTube videos on the subject, such as http://mng.bz/aRMY, if you need convincing.
