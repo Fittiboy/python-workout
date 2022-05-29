@@ -15,7 +15,16 @@ def nonsense():
     return " ".join(sentence)
 
 
+def jumble(sentences):
+    wordlists = []
+    for sentence in sentences:
+        wordlists.append(sentence.split())
+    return [" ".join(wordlist[i] for wordlist in wordlists)
+            for i in range(len(wordlists))]
+
+
 if __name__ == "__main__":
     print(pl_sentence("this is a test translation"))
     print("\nBeyond the exercise\n")
-    print(nonsense())
+    print(nonsense(), "\n")
+    print(jumble(['abc def ghi', 'jkl mno pqr', 'stu vwx yz']), "\n")
