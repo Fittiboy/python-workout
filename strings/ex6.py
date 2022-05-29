@@ -23,8 +23,13 @@ def jumble(sentences):
             for i in range(len(wordlists))]
 
 
+def apache_log():
+    pass
+
+
 if __name__ == "__main__":
     print(pl_sentence("this is a test translation"))
     print("\nBeyond the exercise\n")
     print(nonsense(), "\n")
     print(jumble(['abc def ghi', 'jkl mno pqr', 'stu vwx yz']), "\n")
+    print(apache_log())
