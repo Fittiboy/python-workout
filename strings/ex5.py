@@ -1,3 +1,6 @@
+VWLS = "aeiou"
+
+
 def pig_latin(word):
     return word+"way" if (s := word[0]) in VWLS else word[1:]+s+"ay"
 
@@ -29,7 +32,6 @@ def alternate_pig_latin(word):
 
 
 if __name__ == "__main__":
-    VWLS = "aeiou"
     print(pig_latin("python"))
     print(pig_latin("eat"))
     print("\nBeyond the exercise\n")
