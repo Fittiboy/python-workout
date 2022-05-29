@@ -22,7 +22,7 @@ def alternate_pig_latin(word):
     if word[-1] in '.,?!':
         word, punctuation = word[:-1], word[-1]
     vowels = set(letter for letter in word if letter in VWLS)
-    way = (len(vowels) > 1 or (s:= word[0].lower()) in VWLS)
+    way = (len(vowels) > 1 or (s := word[0].lower()) in VWLS)
     new = word+"way" if way else word[1:]+s+"ay"
     new += punctuation
     return new.title() if word.title() == word else new
