@@ -7,8 +7,7 @@ def ubbi_dubbi(word):
         if letter in VWLS:
             splits.append(word[prev:i])
             prev = i
-    splits.append(word[prev:])
-    return "ub".join(splits)
+    return "ub".join(splits + [word[prev:]])
 
 
 if __name__ == "__main__":
