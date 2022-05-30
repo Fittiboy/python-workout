@@ -24,7 +24,15 @@ def jumble(sentences):
 
 
 def apache_log():
-    pass
+    with open("apache_log.txt") as logfile:
+        logs = logfile.read().split("\n")
+    for line in logs:
+        try:
+            code = line.split('"')[2].split()[0]
+            if code == "404":
+                yield line.split()[0]
+        except IndexError:
+            continue
 
 
 if __name__ == "__main__":
@@ -32,4 +40,5 @@ if __name__ == "__main__":
     print("\nBeyond the exercise\n")
     print(nonsense(), "\n")
     print(jumble(['abc def ghi', 'jkl mno pqr', 'stu vwx yz']), "\n")
-    print(apache_log())
+    for ip in apache_log():
+        print(ip)
