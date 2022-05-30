@@ -10,8 +10,19 @@ def ubbi_dubbi(word):
     return "ub".join(splits + [word[prev:]])
 
 
+# Beyond the exercise
+def ubbi_dubbi_capitalized(word):
+    transformed = ubbi_dubbi(word.lower())
+    if word[0] == word[0].upper():
+        transformed = transformed.title()
+    return transformed
+
+
 if __name__ == "__main__":
     print(ubbi_dubbi("octopus"))
     print(ubbi_dubbi("elephant"))
     print(ubbi_dubbi("khszw"))
     print(ubbi_dubbi("khszwu"))
+    print("\nBeyond the exercise\n")
+    print(ubbi_dubbi_capitalized("octopus"))
+    print(ubbi_dubbi_capitalized("Octopus"))
